@@ -12,9 +12,6 @@
   <link rel="stylesheet" href="css/app.css">
   <link rel="apple-touch-icon" href="img/f7-icon-square.png">
   <link rel="icon" href="img/f7-icon.png">
-  <link rel="stylesheet" href="fontawesome/css/font-awesome.css">
-  <script src="phonegap.js"></script>
-</head>
 <body>
   <div id="app">
     <div class="statusbar"></div>   
@@ -23,7 +20,7 @@
       <div class="page">
         <div class="navbar">
           <div class="navbar-inner">
-            <div class="left"><a href="javascript:window.history.back()" class="back link"><i class="icon icon-back-red"></i><span class="fa fa-arrow-left"></span></a></div>
+            <!-- <div class="left"><a href="javascript:window.history.back()" class="back link"><i class="icon icon-back-red"></i><span class="fa fa-arrow-left"></span></a></div> -->
             <div class="center sliding"></div>
           </div>
         </div>
@@ -48,22 +45,6 @@
     iframe.height = $(window).height();
     iframe.src = "http://192.168.1.80/millenium_miningtrust/";
     $(window).resize();
-    // function obtenerAncho( obj, ancho ) {
-    //   $( "#anvent" ).text( "El ancho de la " + obj + " es " + ancho + "px. (Width)" );
-    // }
-    // function obtenerAlto( obj, alto ) {
-    //   $( "#alvent" ).text( "El alto de la " + obj + " es " + alto + "px. (Height)" );
-    // }
-
-    // obtenerAlto("ventana", $(window).height() );
-    // obtenerAncho("ventana", $(window).width() );
-    // $(window).resize(function(){
-
-
-    //   obtenerAlto("ventana", $( window ).height() );
-    //   obtenerAncho("ventana", $( window ).width() );     
-
-    // });
   </script>
 </body>
 </html>
