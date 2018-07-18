@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>GMT</title>
+  <link rel="stylesheet" href="dist/css/framework7.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+  <link rel="icon" href="img/f7-icon.png">
+  <link rel="stylesheet" href="fontawesome/css/font-awesome.css">
+</head>
+<body>
+  <div id="app">
+    <div class="statusbar"></div>   
+    
+    <div class="view view-main view-init ios-edges" data-url="/">
+      <div class="page">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left"><a href="javascript:window.history.back()" class="back link"><i class="icon icon-back-red"></i><span class="fa fa-arrow-left"></span></a></div>
+            <div class="center sliding"></div>
+          </div>
+        </div>
+        <div class="pages">
+          <div data-page="externalsite" class="page">
+            <div class="page-content">
+                <div>
+                 <iframe src="" frameborder="0" allowfullscreen id="MyIframe"></iframe>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+  <script src="dist/js/framework7.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    var iframe = document.getElementById ('MyIframe');
+    iframe.width = $(window).width();
+    iframe.height = $(window).height();
+    iframe.src = "http://192.168.1.80/millenium_miningtrust/";
+    $(window).resize();
+    // function obtenerAncho( obj, ancho ) {
+    //   $( "#anvent" ).text( "El ancho de la " + obj + " es " + ancho + "px. (Width)" );
+    // }
+    // function obtenerAlto( obj, alto ) {
+    //   $( "#alvent" ).text( "El alto de la " + obj + " es " + alto + "px. (Height)" );
+    // }
+
+    // obtenerAlto("ventana", $(window).height() );
+    // obtenerAncho("ventana", $(window).width() );
+    // $(window).resize(function(){
+
+
+    //   obtenerAlto("ventana", $( window ).height() );
+    //   obtenerAncho("ventana", $( window ).width() );     
+
+    // });
+  </script>
+</body>
+</html>
