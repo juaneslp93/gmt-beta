@@ -15,7 +15,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <!-- <icon src="../platforms/browser/res/icon/tizen/icon-128.png" /> -->
+    <icon src="platforms/browser/res/icon/tizen/icon-128.png" />
     <platform name="android">
         <preference name="android-minSdkVersion" value="14" />
         <allow-intent href="market:*" />
