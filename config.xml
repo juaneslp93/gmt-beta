@@ -15,11 +15,15 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <icon src="platforms/browser/res/icon/tizen/icon-128.png" />
+    <icon src="/platforms/browser/res/icon/tizen/icon-128.png" />
     <platform name="android">
-        <!-- preferencias -->
         <preference name="android-minSdkVersion" value="14" />
-        <allow-intent href="market:*" />       
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <preference name="BackupWebStorage" value="none" />
     </platform>
     <preference name="DisallowOverscroll" value="true" />
     <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
